@@ -8,7 +8,7 @@ ventana = pygame.display.set_mode((800, 594))
 # colores hermosos ÙwÚ
 
 WHI = (255, 255, 255)
-BLU = (0, 0, 255)
+BLU = (28, 71, 159)
 
 ventana.fill(BLU)
 
