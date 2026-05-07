@@ -6,8 +6,8 @@ pantalla = pygame.display.set_mode((800, 600))
 
 player = pygame.image.load('images/75cee04c0ed692fd3411060c85fa2ab8.jpg')
 
-x = 400
-y = 300
+x = 50
+y = 50
 
 rancol = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
 
@@ -19,13 +19,13 @@ while True:
             exit()
 
     keys = pygame.key.get_pressed()
-    if keys[pygame.K_LEFT]:
+    if keys[pygame.K_a]:
         x -= 5
-    if keys[pygame.K_RIGHT]:
+    if keys[pygame.K_d]:
         x += 5
-    if keys[pygame.K_UP]:
+    if keys[pygame.K_w]:
         y -= 5
-    if keys[pygame.K_DOWN]:
+    if keys[pygame.K_s]:
         y += 5
 
     pantalla.fill(rancol)

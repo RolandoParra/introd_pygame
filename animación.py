@@ -38,10 +38,15 @@ while True:
     ventana.fill(azul)
 
     rancol = (random.randint(0,255), random.randint(0,255), random.randint(0,255))
+    rancol2 = (random.randint(0,255), random.randint(0,255), random.randint(0,255))
 
     # movimiento del rectángulo
-    XX = random.randint(10, 320) + MOVIMIENTO
-    YY = random.randint(10, 320) + MOVIMIENTO
+    X1 = random.randint(10, 30) + MOVIMIENTO
+    Y1 = random.randint(10, 30) + MOVIMIENTO
+    X2 = random.randint(10, 30) + MOVIMIENTO
+    Y2 = random.randint(10, 30) + MOVIMIENTO
+    X3 = random.randint(10, 30) + MOVIMIENTO
+    Y3 = random.randint(10, 30) + MOVIMIENTO
     # esto cambia la dirección, haciendo que rebote :3
     if XX >= 320:
         XX = 320
@@ -58,11 +63,9 @@ while True:
         MOVIMIENTO = 9
 
     # dibujar rectangulo en ventana
-    pygame.draw.rect(ventana, rancol, (XX, YY, 80, 80))
-    pygame.draw.rect(ventana, rancol, (XX, YY, 80, 80))
-    pygame.draw.rect(ventana, rancol, (XX, YY, 80, 80))
-    pygame.draw.rect(ventana, rancol, (XX, YY, 80, 80))
-    pygame.draw.rect(ventana, rancol, (XX, YY, 80, 80))
-
+    pygame.draw.rect(ventana, rancol, (X1, Y1, 80, 80))
+    pygame.draw.rect(ventana, rancol, (X2, Y2, 80, 80))
+    pygame.draw.rect(ventana, rancol, (X3, Y3, 80, 80))
+    ventana.fill(rancol2)
     # actualizar visualización de la ventana
     pygame.display.flip()
