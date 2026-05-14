@@ -26,7 +26,7 @@ cielo = (0, 200, 200)
 metal = (191, 191, 191)
 # ----------------------------------------------------------------------------------------
 ventana.fill(cielo)
-piso = pygame.image.load("images/piso.png")
+piso = pygame.image.load("assets/images/piso.png")
 ventana.blit(piso, (0, 500))
 
 pygame.draw.rect(ventana, WHI, (275, 150, 50, 50), 5)
